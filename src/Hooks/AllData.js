@@ -273,7 +273,7 @@ const AllData = () => {
     {
       id: "1",
       img: blog1,
-      imgSmall: blogSmall1,
+      imgSmall: blog1,
       date: "177 April",
       category: "Inspiration",
       title: "How to Own Your Audience by Creating an Email List.",
