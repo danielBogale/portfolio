@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 // for work_images
 import work1 from "../assets/images/work_images/1.jpg";
 import work2 from "../assets/images/work_images/2.jpg";
@@ -9,30 +10,10 @@ import work6 from "../assets/images/work_images/6.jpg";
 import work7 from "../assets/images/work_images/7.jpg";
 import work8 from "../assets/images/work_images/8.jpg";
 import work9 from "../assets/images/work_images/9.jpg";
-// works small images
-import workSmall1 from "../assets/images/work_images/small/1.jpg";
-import workSmall2 from "../assets/images/work_images/small/2.jpg";
-import workSmall3 from "../assets/images/work_images/small/3.jpg";
-import workSmall4 from "../assets/images/work_images/small/4.jpg";
-import workSmall5 from "../assets/images/work_images/small/5.jpg";
-import workSmall6 from "../assets/images/work_images/small/6.jpg";
-import workSmall7 from "../assets/images/work_images/small/7.jpg";
-import workSmall8 from "../assets/images/work_images/small/8.jpg";
-import workSmall9 from "../assets/images/work_images/small/9.jpg";
+
 // blog post images
-import blog6 from "../assets/images/blog_images/6.jpg";
-import blog4 from "../assets/images/blog_images/4.jpg";
-import blog2 from "../assets/images/blog_images/2.jpg";
+
 import blog1 from "../assets/images/blog_images/1.jpg";
-import blog3 from "../assets/images/blog_images/3.jpg";
-import blog5 from "../assets/images/blog_images/5.jpg";
-// blog image small
-import blogSmall6 from "../assets/images/blog_images/small/6.jpg";
-import blogSmall4 from "../assets/images/blog_images/small/4.jpg";
-import blogSmall2 from "../assets/images/blog_images/small/2.jpg";
-import blogSmall1 from "../assets/images/blog_images/small/1.jpg";
-import blogSmall3 from "../assets/images/blog_images/small/3.jpg";
-import blogSmall5 from "../assets/images/blog_images/small/5.jpg";
 
 import img1 from "../assets/images/slider/brand-1.png";
 import img2 from "../assets/images/slider/brand-2.png";
@@ -51,13 +32,11 @@ import iconPhone from "../assets/images/contact/phone-call 1.png";
 import iconEmail from "../assets/images/contact/email 1.png";
 import iconMap from "../assets/images/contact/map 1.png";
 import { CgNotes } from "react-icons/cg";
-import { FaBlogger, FaRegUser, FaAward } from "react-icons/fa";
+import { FaBlogger, FaRegUser } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 import { FiCodesandbox } from "react-icons/fi";
 import { RiContactsBookLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
-
-import { MdOutlineBusinessCenter, MdOutlineSchool } from "react-icons/md";
 
 const AllData = () => {
   const [check, setCheck] = useState(false);
@@ -338,7 +317,7 @@ const AllData = () => {
   ];
 
   // experience items for about page
-  const experienceArray = [
+  const serviceArray = [
     {
       id: "1",
       icon: icon,
@@ -389,69 +368,81 @@ const AllData = () => {
     },
   ];
 
-  // Resume items for Resume page
-  const resumeArray = [
+  // educationArray items for Resume page
+  const educationArray = [
     {
-      type: "Education",
-      icon: MdOutlineSchool,
-      id: "01",
+      id: 1,
       date: "2022-2023",
-      title: "BSC in Computer Science ",
+      title: "Msc in Computer Science ",
       place: "MIU, Fairfield, USA",
       bg: "#FFF4F4",
-
-      id1: "02",
-      date1: "2022 - Present",
-      title1: "Software Engineering",
-      place1: "Holberton School, Online",
-      bg1: "#FFF1FB",
-
-      id2: "03",
-      date2: "2016-2019",
-      title2: "BSC in Business Managment ",
-      place2: "Rift Valley University, Hawassa, Ethiopia",
-      bg2: "#FFF4F4",
-
-      id3: "04",
-      date3: "2016-2020",
-      title3: "BSC in Computer Science ",
-      place3: "Hawassa University, Hawassa, Ethiopia",
-      bg3: "#FFF1FB",
     },
+
     {
-      type: "Experience",
-      icon: MdOutlineBusinessCenter,
-      id: "04",
+      id: 2,
+      date: "2022 - Present",
+      title: "Software Engineering",
+      place: "Holberton School, Online",
+      bg: "#FFF1FB",
+    },
+
+    {
+      id: 3,
+      date: "2016-2019",
+      title: "BSC in Business Managment ",
+      place: "Rift Valley University, Hawassa, Ethiopia",
+      bg: "#FFF4F4",
+    },
+    ,
+    {
+      id: 4,
+      date: "2016-2020",
+      title: "BSC in Computer Science ",
+      place: "Hawassa University, Hawassa, Ethiopia",
+      bg: "#FFF1FB",
+    },
+  ];
+  // experiencesArray items for Resume page
+  const experiencesArray = [
+    {
+      id: 1,
       date: "2021-2022",
       title: "Software Developer",
       place: "ShiTsega, Addis Ababa, Ethiopia",
       bg: "#EEF5FA",
-
-      id1: "05",
-      date1: "2016-2020",
-      title1: "Software Developer",
-      place1: "Hawassa University, Internship.",
-      bg1: "#F2F4FF",
-
-      id2: "06",
-      date2: "2008",
-      title2: "Freelancer",
-      place2: "Freelance TG Bot.",
-      bg2: "#EEF5FA",
     },
+
     {
-      type: "Awards",
-      icon: FaAward,
-      id: "07",
+      id: 2,
+      date: "2016-2020",
+      title: "Software Developer",
+      place: "Hawassa University, Internship.",
+      bg: "#F2F4FF",
+    },
+
+    {
+      id: 3,
+      date: "2008",
+      title: "Freelancer",
+      place: "Freelance TG Bot.",
+      bg: "#EEF5FA",
+    },
+  ];
+  // awardsArray items for Resume page
+  const awardsArray = [
+    {
+      id: 1,
       date: "2020-2021",
       title: " Cisco",
       place: "Hawassa University, Hawassa, Ethiopia",
       bg: "#FCF4FF",
+    },
 
-      id1: "08",
-      date1: "2021 - 2022",
-      title1: "Java Developer",
-      place1: "Tim Buchalka (Java).",
+    {
+      id: 2,
+      date: "2021 - 2022",
+      title: "Java Developer",
+      place: "Tim Buchalka (Java).",
       bg1: "#FCF9F2",
     },
   ];
@@ -490,23 +481,24 @@ const AllData = () => {
       id: "01",
       icon: iconPhone,
       title: "Phone ",
-      item1: "+641 233 9191",
+      item1: "+452 666 386",
+      item2: "+452 666 386",
       bg: "#FCF4FF",
     },
     {
       id: "02",
       icon: iconEmail,
       title: "Email ",
-      item1: "abelkibebe5@gmail.com",
-      item2: "abel.negash@gmail.com",
+      item1: "support@gmail.com",
+      item2: "example@gmail.com",
       bg: "#EEFBFF",
     },
     {
       id: "03",
       icon: iconMap,
       title: "Address ",
-      item1: "1000 N 4th St 52557,",
-      item2: "Fairfield, Iowa, USA",
+      item1: "Maount View, Oval",
+      item2: "Road, New York, USA",
       bg: "#F2F4FF",
     },
   ];
@@ -525,9 +517,11 @@ const AllData = () => {
     handleBlogsData,
     menuItem,
     NavLink,
-    experienceArray,
+    serviceArray,
     sliderImg,
-    resumeArray,
+    educationArray,
+    experiencesArray,
+    awardsArray,
     lineArray,
     contactArray,
   };

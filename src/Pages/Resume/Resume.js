@@ -6,7 +6,7 @@ import LineItem from "./LineItem";
 import ResumeCard from "./ResumeCard";
 
 const Resume = () => {
-  const { lineArray, resumeArray } = UseData();
+  const { lineArray } = UseData();
 
   return (
     <>
@@ -22,11 +22,7 @@ const Resume = () => {
                 Resume
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 ">
-                {/* resume items map */}
-
-                {resumeArray.map((item, i) => (
-                  <ResumeCard item={item} key={i} />
-                ))}
+                <ResumeCard />
               </div>
             </div>
           </div>

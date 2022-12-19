@@ -16,7 +16,7 @@ import AboutCard from "./AboutCard";
 import PageTitle from "../../Share/PageTitle";
 
 const About = () => {
-  const { local, experienceArray } = UseData();
+  const { local, serviceArray } = UseData();
   return (
     <>
       <PageTitle title="About"></PageTitle>
@@ -143,7 +143,7 @@ const About = () => {
               <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
                 {/* Experience information  */}
 
-                {experienceArray.map((item, i) => (
+                {serviceArray.map((item, i) => (
                   <AboutCard key={i} item={item} local={local} />
                 ))}
               </div>

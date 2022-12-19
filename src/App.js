@@ -11,6 +11,7 @@ import Home from "./Pages/Home/Home";
 import HomePage from "./Pages/Home/HomePage";
 import Portfilo from "./Pages/Portfilo/Portfilo";
 import Resume from "./Pages/Resume/Resume";
+import Check from "./Pages/Check/Check";
 
 import NotFound from "./Share/NotFound";
 
@@ -32,6 +33,7 @@ function App() {
               <Route path="contact" element={<Contact />} />
               <Route path="blogs" element={<Blog />} />
               <Route path="works" element={<Portfilo />} />
+              <Route path="checks" element={<Check />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

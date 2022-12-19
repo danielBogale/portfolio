@@ -3,13 +3,7 @@ import Footer from "../../Share/Footer";
 import UseData from "../../Hooks/UseData";
 import { BsXCircle } from "react-icons/bs";
 import Modal from "react-modal";
-import user from "../../assets/images/about/about.jpg";
-import {
-  FaDribbble,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+
 import PageTitle from "../../Share/PageTitle";
 
 const CommonBlog = ({ items, count }) => {
