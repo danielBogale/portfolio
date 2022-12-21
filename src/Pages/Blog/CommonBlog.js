@@ -86,34 +86,29 @@ const CommonBlog = ({ items, count }) => {
                     local === "dark" ? "scrollbarDark" : "scrollbarLight"
                   } overflow-y-scroll max-h-[80vh] `}
                 >
-                  <div className="pr-3 pb-2">
-                    <BsXCircle
-                      onClick={() => setIsOpen(false)}
-                      className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
-                    />
-                    <img
-                      className=" w-full md:h-[450px]  object-cover rounded-xl mt-6"
-                      src={singleData.img}
-                      alt="blog"
-                    />
-                    <div className="flex mt-4 text-tiny text-black dark:text-white">
-                      <span>{singleData?.date}</span>
-                      <span className="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
-                        {singleData?.category}
-                      </span>
+                  <a href={singleData.URL}>
+                    <div className="pr-3 pb-2 dark:text-white animate-pulse">
+                      <BsXCircle
+                        onClick={() => setIsOpen(false)}
+                        className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
+                      />
+                      <img
+                        className=" w-full md:h-[450px]  object-cover rounded-xl mt-6"
+                        src={singleData.img}
+                        alt="blog"
+                      />
+                      <div className="flex mt-4 text-tiny text-black dark:text-white">
+                        <span>{singleData?.date}</span>
+                        <span className="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                          {singleData?.category}
+                        </span>
+                      </div>
+                      <h2 className="dark:text-white sm:text-3xl mt-2 font-medium">
+                        {singleData.title}
+                      </h2>
+                      Read More
                     </div>
-                    <h2 className="dark:text-white sm:text-3xl mt-2 font-medium">
-                      {singleData.title}
-                    </h2>
-                    {blogDescriptionSplit?.map((item, j) => (
-                      <p
-                        className="dark:text-white font-normal text-[15px] sm:text-sm my-4"
-                        key={j}
-                      >
-                        {item}
-                      </p>
-                    ))}
-                  </div>
+                  </a>
                 </div>
               </div>
             </Modal>

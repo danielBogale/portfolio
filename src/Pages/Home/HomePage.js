@@ -1,13 +1,9 @@
 import React from "react";
 import userImage from "../../assets/images/about/avatar.jpg";
 import downloadIcon from "../../assets/images/download.png";
+import abel from "../../assets/files/abel.pdf";
 // import cvFile from "../../assets/images/cv.webp";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaDribbble,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaTelegramPlane, FaLinkedinIn } from "react-icons/fa";
 import PageTitle from "../../Share/PageTitle";
 
 const HomePage = () => {
@@ -34,34 +30,16 @@ const HomePage = () => {
         {/* Social information start */}
         <div className="flex space-x-3">
           <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="socialbtn text-[#1773EA]">
-              <FaFacebookF />
-            </span>
-          </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="socialbtn text-[#1C9CEA]">
-              <FaTwitter />
-            </span>
-          </a>
-          <a
-            href="https://dribbble.com/"
+            href="https://www.t.me/Abelkibebe"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="socialbtn text-[#e14a84] ">
-              <FaDribbble />
+              <FaTelegramPlane />
             </span>
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/abel-k-9b7711aa/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -74,8 +52,9 @@ const HomePage = () => {
 
         {/* Dowanload button start */}
         <a
-          // href={cvFile}
-          download
+          href={abel}
+          download="abel"
+          target="_blank"
           className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
         >
           <img src={downloadIcon} alt="icon" className="mr-2" />

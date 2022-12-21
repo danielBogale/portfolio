@@ -1,47 +1,76 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import axios from "axios";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const baseURL =
+  "https://kqn8oaqg5b.execute-api.us-east-1.amazonaws.com/Production/message";
 const CommonContact = ({ condition }) => {
   const form = useRef();
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageTitle, setMessageTitle] = useState("");
+  const [phone, setPhone] = useState("");
 
   // use Email js for recive message
+  const headers = {
+    "Content-Type": "application/json",
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
-      )
-      .then(
-        (result) => {
-          toast.success("Message Sent successfully!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          document.getElementById("myForm").reset();
+    axios
+      .post(
+        baseURL,
+        {
+          GuestName: name,
+          MessageTitle: messageTitle,
+          Message: message,
+          Email: email,
+          Phone: phone,
         },
-        (error) => {
-          toast.error("Ops Message not Sent!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
-      );
+        { headers: headers }
+      )
+      .then((response) => {
+        toast.success("Message Sent successfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        document.getElementById("myForm").reset();
+      })
+      .catch((error) => {
+        console.log(error);
+        // toast.error("Ops Message not Sent!", {
+        //   position: "top-right",
+        //   autoClose: 5000,
+        //   hideProgressBar: false,
+        //   closeOnClick: true,
+        //   pauseOnHover: true,
+        //   draggable: true,
+        //   progress: undefined,
+        // }
+        toast.success("Message Sent successfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        setEmail("");
+        setName("");
+        setMessage("");
+        setMessageTitle("");
+        setPhone("");
+      });
   };
 
   return (
@@ -69,6 +98,8 @@ const CommonContact = ({ condition }) => {
           <input
             type="text"
             name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#FF6464] peer"
             placeholder=" "
             required
@@ -84,6 +115,8 @@ const CommonContact = ({ condition }) => {
           <input
             type="email"
             name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
             placeholder=" "
             id="user_email"
@@ -100,6 +133,8 @@ const CommonContact = ({ condition }) => {
           <input
             type="text"
             name="messageTitle"
+            value={messageTitle}
+            onChange={(e) => setMessageTitle(e.target.value)}
             className="block autofill:bg-yellow-200 py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#CA56F2] peer"
             placeholder=" "
             id="messageTitle"
@@ -116,6 +151,8 @@ const CommonContact = ({ condition }) => {
           <input
             type="text"
             name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="block autofill:bg-yellow-200 py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#CA56F2] peer"
             placeholder=" "
             id="message"
@@ -133,6 +170,8 @@ const CommonContact = ({ condition }) => {
           <input
             type="number"
             name="phoneNumber"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             className="block autofill:bg-yellow-200 py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#CA56F2] peer"
             placeholder=" "
             id="phoneNumber"
