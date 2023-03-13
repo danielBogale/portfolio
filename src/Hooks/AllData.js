@@ -378,7 +378,6 @@ const AllData = () => {
       place: "MIU, Fairfield, USA",
       bg: "#FFF4F4",
     },
-
     {
       id: 2,
       date: "2022 - Present",
@@ -386,7 +385,6 @@ const AllData = () => {
       place: "Holberton School, Online",
       bg: "#FFF1FB",
     },
-
     {
       id: 3,
       date: "2016-2019",
@@ -394,7 +392,6 @@ const AllData = () => {
       place: "Rift Valley University, Hawassa, Ethiopia",
       bg: "#FFF4F4",
     },
-    ,
     {
       id: 4,
       date: "2016-2020",

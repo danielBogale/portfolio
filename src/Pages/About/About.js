@@ -3,7 +3,6 @@ import {
   FaEnvelopeOpenText,
   FaMapMarkerAlt,
   FaMobileAlt,
-  FaRegCalendarAlt,
 } from "react-icons/fa";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";

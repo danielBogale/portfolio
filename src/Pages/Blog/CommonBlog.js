@@ -14,7 +14,6 @@ const CommonBlog = ({ items, count }) => {
     handleBlogsData(id);
   };
 
-  const blogDescriptionSplit = singleData?.description?.split("\n");
   return (
     <>
       <PageTitle title="Blog"></PageTitle>

@@ -27,12 +27,6 @@ exports.handler = async (event) => {
     body: queueRes,
   };
 
-  //   const deleteParams = {
-  //     QueueUrl: queueURL,
-  //     ReceiptHandle: queueRes.Messages[0].ReceiptHandle,
-  //   };
-
-  //   const removedMessage = await sqs.deleteMessage(deleteParams).promise();
   console.log("removed message");
   const { randomUUID } = require("crypto");
   const paramsDynamo = {
@@ -48,6 +42,13 @@ exports.handler = async (event) => {
       Phone: "2365223132",
     },
   };
+
+  //   const deleteParams = {
+  //   QueueUrl: queueURL,
+  //   ReceiptHandle: queueRes.Messages[0].ReceiptHandle,
+  // };
+
+  // const removedMessage = await sqs.deleteMessage(deleteParams).promise();
 
   return dynamodb
     .put(paramsDynamo)

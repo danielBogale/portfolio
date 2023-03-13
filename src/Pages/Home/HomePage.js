@@ -17,7 +17,7 @@ const HomePage = () => {
         data-aos="fade"
       >
         <img
-          className="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px]"
+          className="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px] object-scale-down"
           src={userImage}
           alt=""
         />
@@ -54,7 +54,6 @@ const HomePage = () => {
         <a
           href={abel}
           download="abel"
-          target="_blank"
           className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
         >
           <img src={downloadIcon} alt="icon" className="mr-2" />
