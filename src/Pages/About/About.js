@@ -9,13 +9,9 @@ import "slick-carousel/slick/slick.css";
 import aboutImage from "../../assets/images/about/about.jpg";
 import "../../Share/Style.css";
 import Footer from "../../Share/Footer";
-import UseData from "../../Hooks/UseData";
-import SliderCommon from "../../Share/SliderCommon";
-import AboutCard from "./AboutCard";
 import PageTitle from "../../Share/PageTitle";
 
 const About = () => {
-  const { local, serviceArray } = UseData();
   return (
     <>
       <PageTitle title="About"></PageTitle>
