@@ -24,11 +24,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws-region: us-east-1
 
-      - name: Install Dependecies
+      - name: Install Dependencies
         uses: actions/setup-node@v2
         with:
           node-version: "16.x"
-        run: npm install
+        run: |
+          npm install
 
       - name: Build Static Website
         run: npm run build
