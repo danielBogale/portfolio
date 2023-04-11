@@ -25,7 +25,6 @@ jobs:
           aws-region: us-east-1
 
       - name: Install Dependencies
-        uses: actions/setup-node@v2
         with:
           node-version: "16.x"
         run: |
