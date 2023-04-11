@@ -12,6 +12,7 @@ jobs:
       DIST: build
       REGION: us-east-1
       DIST_ID: EWLY42Z4N3P50
+      CI: false
 
     steps:
       - name: Checkout
