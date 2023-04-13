@@ -1,13 +1,9 @@
 import React from "react";
-import UseData from "../../Hooks/UseData";
 import Footer from "../../Share/Footer";
 import PageTitle from "../../Share/PageTitle";
-import LineItem from "./LineItem";
 import ResumeCard from "./ResumeCard";
 
 const Resume = () => {
-  const { lineArray } = UseData();
-
   return (
     <>
       <PageTitle title="Resume"></PageTitle>

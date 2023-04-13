@@ -1,4 +1,5 @@
 import AOS from "aos";
+import ReactGA from "react-ga";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -14,6 +15,9 @@ import Resume from "./Pages/Resume/Resume";
 import Check from "./Pages/Check/Check";
 
 import NotFound from "./Share/NotFound";
+
+const TRACKING_ID = "UA-263317620-2"; // my google analytics tracking id
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {

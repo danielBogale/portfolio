@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import userImage from "../../assets/images/about/avatar.jpg";
 import downloadIcon from "../../assets/images/download.png";
 import abel from "../../assets/files/abel.doc";
@@ -7,6 +8,9 @@ import { FaTelegramPlane, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import PageTitle from "../../Share/PageTitle";
 
 const HomePage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       <PageTitle title="Home"></PageTitle>

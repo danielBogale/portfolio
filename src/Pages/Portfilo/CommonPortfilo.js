@@ -20,15 +20,24 @@ const CommonPortfilo = ({ condition, items }) => {
     setIsOpen,
     singleData,
   } = UseData();
+  // eslint-disable-next-line
   const [test, setTest] = useState("All");
+
+  // eslint-disable-next-line
   const handleSearch = (text) => {
     handleData(text);
     setTest(text);
   };
-  useEffect(() => {
-    setTest("All");
-    handleData("All");
-  }, []);
+
+  useEffect(
+    () => {
+      setTest("All");
+      handleData("All");
+    },
+    // eslint-disable-next-line
+    []
+  );
+
   const handleModle = (id) => {
     handleModelData(id);
   };

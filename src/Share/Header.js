@@ -3,7 +3,6 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import UseData from "../Hooks/UseData";
-import logo from "../assets/images/logo/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
