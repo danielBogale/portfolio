@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import {
   FaEnvelopeOpenText,
   FaMapMarkerAlt,
@@ -12,6 +13,9 @@ import Footer from "../../Share/Footer";
 import PageTitle from "../../Share/PageTitle";
 
 const About = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       <PageTitle title="About"></PageTitle>

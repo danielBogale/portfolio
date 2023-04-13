@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import UseData from "../../Hooks/UseData";
 import Footer from "../../Share/Footer";
 import PageTitle from "../../Share/PageTitle";
 import CommonContact from "./CommonContact";
 
 const Contact = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   const { local, contactArray } = UseData();
 
   return (

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import Footer from "../../Share/Footer";
 import PageTitle from "../../Share/PageTitle";
 import ResumeCard from "./ResumeCard";
 
 const Resume = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       <PageTitle title="Resume"></PageTitle>
