@@ -43,7 +43,7 @@ const HomePage = () => {
             </span>
           </a>
           <a
-            href="https://www.linkedin.com/in/abel-k-9b7711aa/"
+            href="https://www.linkedin.com/in/abelkibebe/"
             target="_blank"
             rel="noopener noreferrer"
           >
