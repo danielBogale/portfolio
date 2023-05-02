@@ -454,7 +454,7 @@ const AllData = () => {
 
     {
       id: 3,
-      date: "2008",
+      date: "2018",
       title: "Freelancer",
       place: "Freelance TG Bot.",
       bg: "#EEF5FA",
