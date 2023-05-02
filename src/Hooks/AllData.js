@@ -442,6 +442,7 @@ const AllData = () => {
       title: "Software Developer",
       place: "ShiTsega, Addis Ababa, Ethiopia",
       bg: "#EEF5FA",
+
     },
 
     {
@@ -450,6 +451,7 @@ const AllData = () => {
       title: "Software Developer",
       place: "Hawassa University, Internship.",
       bg: "#F2F4FF",
+
     },
 
     {
