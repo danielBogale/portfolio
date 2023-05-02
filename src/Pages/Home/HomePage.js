@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
 import userImage from "../../assets/images/about/avatar.jpg";
+// eslint-disable-next-line
 import downloadIcon from "../../assets/images/download.png";
+// eslint-disable-next-line
 import abel from "../../assets/files/abel.doc";
 // import cvFile from "../../assets/images/cv.webp";
 import { FaTelegramPlane, FaLinkedinIn, FaGithub } from "react-icons/fa";
