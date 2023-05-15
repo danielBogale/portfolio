@@ -438,27 +438,27 @@ const AllData = () => {
   const experiencesArray = [
     {
       id: 1,
-      date: "2021-2022",
-      title: "Software Developer",
-      place: "ShiTsega, Addis Ababa, Ethiopia",
+      date: "Jan/2021 – Aug/2022",
+      title: "Software Engineer II ",
+      place: "SHI-TSEGA Technologies, Addis Ababa, Ethiopia",
       bg: "#EEF5FA",
 
     },
 
     {
       id: 2,
-      date: "2016-2020",
-      title: "Software Developer",
-      place: "Hawassa University, Internship.",
+      date: "Apr/2019 – Jan/2021",
+      title: "Full Stack Java Developer – React ",
+      place: "Her IT Solutions, Addis Ababa, Ethiopia",
       bg: "#F2F4FF",
 
     },
 
     {
       id: 3,
-      date: "2018",
-      title: "Freelancer",
-      place: "Freelance TG Bot.",
+      date: "Nov/2018 – Apr/2019",
+      title: "Junior Java Developer ",
+      place: "Her IT Solutions, Addis Ababa, Ethiopia",
       bg: "#EEF5FA",
     },
   ];
