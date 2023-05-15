@@ -414,20 +414,6 @@ const AllData = () => {
     },
     {
       id: 2,
-      date: "2022 - Present",
-      title: "Software Engineering",
-      place: "Holberton School, Online",
-      bg: "#FFF1FB",
-    },
-    {
-      id: 3,
-      date: "2016-2019",
-      title: "BSC in Business Managment ",
-      place: "Rift Valley University, Hawassa, Ethiopia",
-      bg: "#FFF4F4",
-    },
-    {
-      id: 4,
       date: "2016-2020",
       title: "BSC in Computer Science ",
       place: "Hawassa University, Hawassa, Ethiopia",
@@ -478,7 +464,8 @@ const AllData = () => {
       title: "Java Developer",
       place: "Tim Buchalka (Java).",
       bg1: "#FCF9F2",
-    },
+    }
+
   ];
 
   // Working Skills items for Resume page
