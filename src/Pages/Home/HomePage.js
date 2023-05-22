@@ -4,7 +4,6 @@ import userImage from "../../assets/images/about/avatar.jpg";
 // eslint-disable-next-line
 import downloadIcon from "../../assets/images/download.png";
 // eslint-disable-next-line
-import abel from "../../assets/files/abel.doc";
 // import cvFile from "../../assets/images/cv.webp";
 import { FaTelegramPlane, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import PageTitle from "../../Share/PageTitle";
@@ -28,7 +27,7 @@ const HomePage = () => {
           alt=""
         />
         <h3 className="mt-6 mb-1 text-5xl font-semibold dark:text-white">
-          Abel Kibebe
+          Daniel Bogale
         </h3>
         <p className="mb-4 text-[#7B7B7B]">Fullstack Developer</p>
         {/* Avatar Info End */}
@@ -36,7 +35,7 @@ const HomePage = () => {
         {/* Social information start */}
         <div className="flex space-x-3">
           <a
-            href="https://www.t.me/Abelkibebe"
+            href="https://www.t.me/danielAykadu"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -45,7 +44,7 @@ const HomePage = () => {
             </span>
           </a>
           <a
-            href="https://www.linkedin.com/in/abelk-negash/"
+            href="https://www.linkedin.com/in/danielAykadu/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +54,7 @@ const HomePage = () => {
           </a>
 
           <a
-            href="https://github.com/zadigg/"
+            href="https://github.com/danielBogale/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -64,19 +63,6 @@ const HomePage = () => {
             </span>
           </a>
         </div>
-        {/* Social information start */}
-
-        {/* Dowanload button start */}
-        {/* <a
-          href={abel}
-          download="abel"
-          className="flex items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
-        >
-          <img src={downloadIcon} alt="icon" className="mr-2" />
-          Download CV
-        </a> */}
-
-        {/* Dowanload button End */}
       </div>
     </>
   );

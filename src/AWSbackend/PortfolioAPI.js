@@ -75,7 +75,7 @@ async function saveProduct(requestBody) {
       `GuestName: ${requestBody.GuestName} 
           ` +
       `Phone: ${requestBody.Phone}`,
-    TopicArn: "arn:aws:sns:us-east-1:211551425798:portfolioTopic",
+    TopicArn: "arn:aws:sns:us-east-1:210642801034:projectTopics",
   };
 
   const publishTextPromise = new AWS.SNS({ apiVersion: "2010-03-31" })

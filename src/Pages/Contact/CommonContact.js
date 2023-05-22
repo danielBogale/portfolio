@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const baseURL =
-  "https://kqn8oaqg5b.execute-api.us-east-1.amazonaws.com/Production/message";
+  " https://uxdqqld79i.execute-api.us-east-1.amazonaws.com/v1/message";
 const CommonContact = ({ condition }) => {
   const form = useRef();
   const [email, setEmail] = useState("");

@@ -26,9 +26,9 @@
 //         baseURL,
 //         {
 //           Message: "Hi Stelica",
-//           Email: "abelkibebe5@gmail.com",
-//           GuestName: "Abel Kibebe",
-//           Phone: "64123391911",
+//           Email: "gdr.dani@gmail.com",
+//           GuestName: "Daniel Bogale",
+//           Phone: "11111111",
 //         },
 //         { headers: headers }
 //       )

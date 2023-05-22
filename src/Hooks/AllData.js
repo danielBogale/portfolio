@@ -281,18 +281,9 @@ const AllData = () => {
       imgSmall: spring,
       date: "6 Mar 2023",
       category: "Educational",
-      URL: "https://medium.com/@abelkibebe/spring-boot-security-eb0e6d19f842",
-      title: "Spring Boot Security.",
-      bg: "#FCF4FF",
-    },
-    {
-      id: "2",
-      img: blog1,
-      imgSmall: blog1,
-      date: "20 Oct 2022",
-      category: "Educational",
-      URL: "https://github.com/zadigg/RedShiftSQLConnection/blob/main/README.md",
-      title: "RedShift connection with SQL.",
+      URL: "https://medium.com/@gdr.dani/microservice-orchestration-and-choreography-design-patterns-and-best-practices-1f8a06ed555",
+      title:
+        "Microservice Orchestration and Choreography: Design Patterns and Best Practices.",
       bg: "#FCF4FF",
     },
   ];
@@ -414,9 +405,16 @@ const AllData = () => {
     },
     {
       id: 2,
-      date: "2016-2020",
-      title: "BSC in Computer Science ",
-      place: "Hawassa University, Hawassa, Ethiopia",
+      date: "2014-2017",
+      title: "MSc in Telecommunications Engineering",
+      place: "University of Trento, trento, Italy",
+      bg: "#FFF1FB",
+    },
+    {
+      id: 3,
+      date: "2014-2017",
+      title: "MSc in Telecommunications Engineering",
+      place: "University of Trento, trento, Italy",
       bg: "#FFF1FB",
     },
   ];
@@ -428,7 +426,6 @@ const AllData = () => {
       title: "Software Engineer II ",
       place: "SHI-TSEGA Technologies, Addis Ababa, Ethiopia",
       bg: "#EEF5FA",
-
     },
 
     {
@@ -437,7 +434,6 @@ const AllData = () => {
       title: "Full Stack Java Developer – React ",
       place: "Her IT Solutions, Addis Ababa, Ethiopia",
       bg: "#F2F4FF",
-
     },
 
     {
@@ -464,8 +460,7 @@ const AllData = () => {
       title: "Java Developer",
       place: "Tim Buchalka (Java).",
       bg1: "#FCF9F2",
-    }
-
+    },
   ];
 
   // Working Skills items for Resume page
@@ -502,16 +497,15 @@ const AllData = () => {
       id: "01",
       icon: iconPhone,
       title: "Phone ",
-      item1: "+6412339191",
-      // item2: "+452 666 386",
+      item1: "+17034698841",
       bg: "#FCF4FF",
     },
     {
       id: "02",
       icon: iconEmail,
       title: "Email ",
-      item1: "abelkibebe5@gmail.com",
-      item2: "abel.negash@gmail.com",
+      item1: "gdr.dani@gmail.com",
+      item2: "dbogale@miu.edu",
       bg: "#EEFBFF",
     },
     {

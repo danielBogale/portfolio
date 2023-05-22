@@ -79,9 +79,9 @@ const About = () => {
                           <h6 className="font-medium dark:text-white">
                             <a
                               className="hover:text-[#FA5252] duration-300 transition"
-                              href="tel:+1234567890"
+                              href="tel:+17034698841"
                             >
-                              +641 233 9191
+                              +17034698841
                             </a>
                           </h6>
                         </div>
@@ -112,7 +112,7 @@ const About = () => {
                               className="hover:text-[#FA5252] duration-300 transition"
                               href="mailto:ibthemes21@gmail.com"
                             >
-                              abelkibebe5@mail.com
+                              gdr.dani@mail.com
                             </a>
                           </h6>
                         </div>

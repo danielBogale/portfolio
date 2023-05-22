@@ -24,7 +24,7 @@ const Header = () => {
 
                 {/* <img className="h-[26px] lg:h-[32px]" src={logo} alt="" />  */}
                 <h1 className="text-7xl text-[#D9444A] font-Chiller">
-                  Abel kibebe
+                  Daniel Bogale
                 </h1>
               </Link>
               <div className="flex items-center">
