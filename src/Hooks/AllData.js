@@ -130,8 +130,8 @@ const AllData = () => {
       bg: "#F0F0FF",
       client: "MIU",
       tools: "Spring Data JPA, Spring Security, SQL, Lombok, Model Mapper",
-      link: "https://github.com/zadigg/Badge-And-Membership-System",
-      linkText: "https://github.com/zadigg/Badge-And-Membership-System",
+      link: "https://dev.azure.com/cs544-2023-03-09/Project/_git/Project/",
+      linkText: "https://dev.azure.com/cs544-2023-03-09/Project/_git/Project/",
       description:
         "The Badge and Membership system is designed to automate badge checking and the membership system. It uses technologies such as Spring Data JPA, Spring Security, SQL, Lombok, and Model Mapper to provide an efficient and reliable system for managing badges and memberships. With this system, manual badge checking becomes a thing of the past, and membership management becomes much more straightforward.",
     },
@@ -279,7 +279,7 @@ const AllData = () => {
       id: "1",
       img: spring,
       imgSmall: spring,
-      date: "6 Mar 2023",
+      date: "21 May 2023",
       category: "Educational",
       URL: "https://medium.com/@gdr.dani/microservice-orchestration-and-choreography-design-patterns-and-best-practices-1f8a06ed555",
       title:
