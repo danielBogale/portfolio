@@ -144,8 +144,8 @@ const AllData = () => {
       bg: "#FFF3FC",
       client: "MIU",
       tools: "Java, Swing",
-      link: "https://github.com/zadigg/Library-System",
-      linkText: "www.github.com/zadigg/Library-System",
+      link: "https://github.com/KidusKebede/Library-Managment-System",
+      linkText: "https://github.com/KidusKebede/Library-Managment-System",
       description:
         " The Library Management System is a Java-based application designed to help libraries efficiently manage their resources. With a user-friendly interface built using Swing, librarians can easily catalog books, track borrowing and returns, and manage inventory. This system streamlines library operations and improves the user experience for both librarians and patrons..",
     },
