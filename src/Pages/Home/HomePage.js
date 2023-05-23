@@ -27,7 +27,7 @@ const HomePage = () => {
           alt=""
         />
         <h3 className="mt-6 mb-1 text-5xl font-semibold dark:text-white">
-          Dan Aykadu
+          Daniel Aykadu
         </h3>
         <p className="mb-4 text-[#7B7B7B]">Fullstack Developer</p>
         {/* Avatar Info End */}
