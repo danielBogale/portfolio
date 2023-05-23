@@ -8,7 +8,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      BUCKET: dbogale.com
+      BUCKET: www.dbogale.com
       DIST: build
       REGION: us-east-1
       DIST_ID: E3SISCN2VTWVV9
